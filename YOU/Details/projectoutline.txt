@@ -1,0 +1,6 @@
+1.Figure out What Exactly the application is.
+2.Figure out languages to be used and configure IDE with all relevant libraries
+3.Start off login page and password manager
+4.
+5.
+6.
