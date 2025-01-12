@@ -1,0 +1,27 @@
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Primary background */
+    color: #E0E0E0; /* Text color */
+  }
+  
+  section .profile-picture {
+    width: 8rem;
+    height: 8rem;
+    background-color: #BB86FC; /* Accent color */
+    border-radius: 50%;
+  }
+  
+  section .description {
+    margin-top: 1.5rem;
+    background-color: #1F1B24; /* Secondary background */
+    color: #E0E0E0; /* Text color */
+    width: 75%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  

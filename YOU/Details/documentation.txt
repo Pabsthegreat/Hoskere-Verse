@@ -1,8 +1,0 @@
-This project was started on May 3 2024 as an attempt to improve my portfolio, started it in my second semester of college.
-Friend had suggested to do a good project rather than doing too many courses
-Asked ChatGPT if this project has a similar application on the market, probably not on the market.
-I wanted to build an all in one application/website.
-
-Value Proposition - Why have too many apps and notepads to track everything you need in day to day life when it can be in one app.
-
-I just want to make an application that "I" would use daily.

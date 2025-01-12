@@ -1,0 +1,47 @@
+
+header {
+  position: sticky; /* Keep it fixed to the top */
+  top: 0; /* Position it at the very top */
+  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: #121212;; /* Secondary background */
+  color: #E0E0E0; /* Text color */
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column; /* Stack name and nav vertically */
+  align-items: center; /* Center-align content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #BB86FC; /* Accent color */
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem; /* Add some spacing below the name */
+  width: 100%; /* Ensure navbar stretches horizontally */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center-align nav links */
+  gap: 7rem;
+}
+
+nav a {
+  color: #BB86FC; /* Accent color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #03DAC5; /* Highlight color */
+}
+
+

@@ -1,0 +1,37 @@
+.footer {
+    background-color: #121212;; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-link {
+    color: #03a9f4; /* Light blue for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
