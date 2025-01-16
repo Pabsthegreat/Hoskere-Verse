@@ -1,0 +1,16 @@
+{
+    "blogPosts": [
+      {
+        "id": 1,
+        "image": "path/to/image1.jpg",
+        "heading": "My First Blog Post",
+        "description": "This is a brief description of my first blog post."
+      },
+      {
+        "id": 2,
+        "image": "path/to/image2.jpg",
+        "heading": "Learning React",
+        "description": "Sharing my journey of learning React and building projects."
+      }
+    ]
+}

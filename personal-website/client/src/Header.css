@@ -4,6 +4,7 @@ header {
   top: 0; /* Position it at the very top */
   z-index: 1000; /* Ensure it stays above other elements */
   background-color: #121212;; /* Secondary background */
+  opacity: 1;
   color: #E0E0E0; /* Text color */
   padding: 1rem 2rem;
   display: flex;

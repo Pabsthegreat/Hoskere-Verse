@@ -1,0 +1,40 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Personal Portfolio Website",
+        "image": "path/to/portfolio-image.jpg",
+        "description": "A fully responsive portfolio website showcasing my projects, blog posts, and certifications. Built using React and CSS.",
+        "link": "https://myportfolio.com"
+      },
+      {
+        "id": 2,
+        "title": "Typing Test App",
+        "image": "path/to/typing-test-image.jpg",
+        "description": "A typing speed test app that calculates words per minute and accuracy. Developed using React and Node.js.",
+        "link": "https://github.com/username/typing-test"
+      },
+      {
+        "id": 3,
+        "title": "Ride-Hailing App Prototype",
+        "video": "path/to/ride-hailing-demo.mp4",
+        "description": "A prototype for a ride-hailing app with features like login, booking, and map integration. Created using Flutter.",
+        "link": "https://github.com/username/ride-hailing-app"
+      },
+      {
+        "id": 4,
+        "title": "Diabetes Management System",
+        "image": "path/to/diabetes-management-image.jpg",
+        "description": "An AI-powered system that recommends personalized diet and exercise plans for diabetic patients in India. Built during an internship at RAPID Centre.",
+        "link": "https://github.com/username/diabetes-management"
+      },
+      {
+        "id": 5,
+        "title": "Arcade-Style Game",
+        "image": "path/to/game-image.jpg",
+        "description": "An engaging arcade-style game developed using Pygame and MySQL, featuring multiple levels and challenges.",
+        "link": "https://github.com/username/arcade-game"
+      }
+    ]
+  }
+  
