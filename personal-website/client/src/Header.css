@@ -1,29 +1,58 @@
-
-header {
-  position: sticky; /* Keep it fixed to the top */
-  top: 0; /* Position it at the very top */
-  z-index: 1000; /* Ensure it stays above other elements */
-  background-color: #121212;; /* Secondary background */
-  opacity: 1;
-  color: #E0E0E0; /* Text color */
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column; /* Stack name and nav vertically */
-  align-items: center; /* Center-align content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+h3 {
+  font-family: 'Courier New', Courier, monospace; /* Set Courier New for main headings */
+  color: #FF9933; /* Saffron color for main headings */
 }
 
-header h1 {
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: #E0E0E0;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+}
+
+.header-title-container {
+  display: flex;
+  align-items: center;
+  flex:1;
+}
+
+.header-title {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #BB86FC; /* Accent color */
-  text-align: center;
+  color: #FF9933;
+  text-align: left;
+}
+
+.header-title :hover {
+  color: gold;
+}
+.menu-icon {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu-icon .line {
+  background-color: #FF9933;
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 nav {
-  margin-top: 0.5rem; /* Add some spacing below the name */
-  width: 100%; /* Ensure navbar stretches horizontally */
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
 }
 
 nav ul {
@@ -31,18 +60,58 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; /* Center-align nav links */
-  gap: 7rem;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-nav a {
-  color: #BB86FC; /* Accent color */
-  text-decoration: none;
+nav a { 
+  color: #FF9933;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 nav a:hover {
-  color: #03DAC5; /* Highlight color */
+  color: gold;
 }
 
+/* Hide the menu list by default using visibility and opacity */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+nav ul {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for links */
+  gap: 2rem;
+}
+
+/* When the menu is open, show the elements */
+.nav-menu ul li {
+  visibility: hidden;  /* Hide elements initially */
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction */
+  transition: visibility 0.6s, opacity 0.6s ease-in-out; /* Smooth transition effect */
+}
+
+.nav-menu.open ul li {
+  visibility: visible;  /* Show elements when menu is open */
+  opacity: 1;
+  pointer-events: auto; /* Allow interaction */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  nav {
+    display: none; /* Hide the menu on mobile */
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+}

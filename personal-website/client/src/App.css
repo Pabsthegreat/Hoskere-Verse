@@ -4,21 +4,60 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif; /* Set Source Sans Pro as the primary font */
+  background-color: #121212; /* Primary background */
+  color: #E0E0E0; /* Text color */
+  display: flex;
+  flex-direction: column; /* Ensure body works with flexbox for layout */
+  min-height: 100vh; /* Full viewport height */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Ensures #root takes up remaining height */
+}
+
+header, footer {
+  flex-shrink: 0; /* Prevents shrinking of header/footer */
+}
+
+main {
+  flex: 1; /* Pushes the footer to the bottom if content is less */
+  display: flex;
+  flex-direction: column; /* For aligning children properly */
+}
+
 section {
   scroll-snap-align: start;
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif; /* Sleek and modern font */
-  background-color: #121212; /* Primary background */
-  color: #E0E0E0; /* Text color */
-  scroll-behavior: smooth;
-}
 
 a {
+  color: #03A9F4; /* Normal link color */
   transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0288D1; /* Hover effect for links */
+}
+
+button {
+  background-color: #FF9933; /* Saffron background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #E07B29; /* Darker saffron for hover effect */
 }
 
 button, a {
@@ -30,9 +69,23 @@ h1, h2 {
 }
 
 h1 {
-  color: #BB86FC; /* Accent color */
+  font-family: 'Courier New', Courier, monospace; /* Set Courier New for main headings */
+  color: #FF9933; /* Saffron color for main headings */
 }
 
 h2 {
-  color: #03DAC5; /* Highlight color */
+  font-family: 'Courier New', Courier, monospace; /* Set Courier New for subheadings */
+  color: #138808; /* Green color for subheadings */
+}
+
+footer {
+  background-color: #121212; /* Matches the primary background */
+  color: #E0E0E0; /* Text color for footer */
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.progress-bar, .divider {
+  background-color: #138808; /* Green for progress bars or dividers */
 }

@@ -7,7 +7,7 @@ const Profile = () => {
         <div className="profile-container">
             <div className="profile-hero">
                 <img 
-                    src="path/to/your/profile-image.jpg" 
+                    src="/images/download.jpeg"
                     alt="Adarsh Hoskere" 
                     className="profile-image" 
                 />

@@ -4,13 +4,19 @@
         "id": 1,
         "name": "AWS Certified Cloud Practitioner",
         "link": "https://example.com/certification/aws",
-        "image": "path/to/aws-certification.jpg"
+        "image": "/images/download.jpeg"
         },
         {
         "id": 2,
-        "name": "Meta Front-End Developer",
+        "name": "Google Data Analytics Professional Certificate",
         "link": "https://example.com/certification/meta",
-        "image": "path/to/meta-certification.jpg"
+        "image": "/images/download.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Meta Front-End Developer",
+            "link": "https://example.com/certification/meta",
+            "image": "/images/download.jpeg"
         }
     ]
 }

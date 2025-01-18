@@ -35,3 +35,17 @@
     list-style-type: disc;
     margin-left: 20px;
 }
+.download-button {
+    background-color: #FF9933;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+.download-button:hover {
+background-color: #E07B29;
+}

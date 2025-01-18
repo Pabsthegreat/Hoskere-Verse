@@ -1,37 +1,49 @@
 .footer {
-    background-color: #121212;; /* Dark background */
-    color: #e0e0e0; /* Light text */
-    padding: 20px 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-links {
-    margin-top: 10px;
-  }
-  
-  .footer-link {
-    color: #03a9f4; /* Light blue for links */
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
-  }
-  
-  .footer-link:hover {
-    text-decoration: underline;
-  }
-  
-  .footer p {
-    font-size: 14px;
-    margin: 0;
-  }
-  
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative; /* Keeps footer behavior flexible */
+  bottom: 0;
+  width: 100%;
+  flex-shrink: 0; /* Prevent footer from shrinking in a flex layout */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-link {
+  color: #03a9f4; /* Light blue for links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #0288d1; /* Slightly darker blue on hover */
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Ensures the footer stays at the bottom when content is short */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+main {
+  flex: 1; /* Pushes footer to the bottom */
+}

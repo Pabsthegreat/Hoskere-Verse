@@ -1,25 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="header">
       <div className="header-title-container">
-        <h1 className="header-title">Adarsh Arun Hoskere</h1>
-        {/* <button className="header-menu-button">Contact Me</button> */}
+        <Link to='/'><h1 className="header-title">Adarsh Arun Hoskere</h1></Link>
       </div>
-      <nav className="nav-menu">
+      <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/profile">Profile</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/certifications">Certifications</Link></li>
-          <li><Link to="/blogposts">BlogPosts</Link></li>
-          <li><Link to="/quicklinks">QuickLinks</Link></li>
+          <li><h3><Link to="/certifications">Certifications</Link></h3></li>
+          <li><h3><Link to="/blogposts">BlogPosts</Link></h3></li>
+          <li><h3><Link to="/profile">Profile</Link></h3></li>
+          <li><h3><Link to="/projects">Projects</Link></h3></li>
+          <li><h3><Link to="/resume">Resume</Link></h3></li>
         </ul>
       </nav>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
     </header>
   );
 };

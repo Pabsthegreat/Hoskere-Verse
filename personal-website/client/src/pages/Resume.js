@@ -47,6 +47,9 @@ const Resume = () => {
                     <li>Developed an arcade-style game using Pygame and MySQL.</li>
                 </ul>
             </div>
+            <a href="/resume.pdf" download="Adarsh_Arun_Hoskere_Resume" className="download-button">
+                Download Resume
+            </a>
         </div>
     );
 };

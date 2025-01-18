@@ -1,0 +1,9 @@
+.carousel-container {
+    margin: 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #007acc;
+}

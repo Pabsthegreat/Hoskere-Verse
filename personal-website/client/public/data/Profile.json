@@ -3,14 +3,14 @@
     {
       "id": 1,
       "heading": "Personal Portfolio Website",
-      "imageOrVideo": "path/to/portfolio.jpg",
+      "image": "/images/download.jpeg",
       "description": "A responsive portfolio website built with React.",
       "link": "https://example.com/portfolio"
     },
     {
       "id": 2,
       "heading": "Typing Test App",
-      "imageOrVideo": "path/to/typing-test.mp4",
+      "image": "/images/download.jpeg",
       "description": "A web application to measure typing speed and accuracy.",
       "link": "https://example.com/typing-test"
     }
