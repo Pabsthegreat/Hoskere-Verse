@@ -13,11 +13,11 @@ import './App.css';
 
 const App = () => {
   const sections = [
-    { title: 'Profile', description: 'Learn more about me.', link: '/profile' },
-    { title: 'Resume', description: 'Check out my professional experience.', link: '/resume' },
-    { title: 'Projects', description: 'Explore my projects.', link: '/projects' },
-    { title: 'Certifications', description: 'View my certifications.', link: '/certifications' },
-    { title: 'BlogPosts', description: 'Read my thoughts and articles.', link: '/blogposts' },
+    { title: 'Curiosity', description: 'Who am I? Check out my story', seemore:'View Profile',link: '/profile' },
+    { title: 'Professional', description: 'My professional highlights and more', seemore:'View Resume',link: '/resume' },
+    { title: 'Dedicated', description: 'Explore how I have applied my knowledge in exciting applications', seemore:'Explore Projects',link: '/projects' },
+    { title: 'Hardworking', description: 'I love learning about new things', seemore:'View Certifications',link: '/certifications' },
+    { title: 'Creative', description: "What ticks this tech guy's brain?", seemore:'View BlogPosts',link: '/blogposts' },
   ];
 
   return (

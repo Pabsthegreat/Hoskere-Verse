@@ -1,4 +1,4 @@
-section {
+.main {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,20 +8,127 @@ section {
     color: #E0E0E0; /* Text color */
   }
   
-  section .profile-picture {
-    width: 8rem;
-    height: 8rem;
-    background-color: #BB86FC; /* Accent color */
-    border-radius: 50%;
+.main .description {
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+  }
+
+.main .description h1 {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+
+.main .description > h3 {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .adjective-carousel {
+    display: inline-block;
+    width: 17ch; /* Fixed width to fit the longest word */
+    text-align: center; /* Center the adjective */
+    color: #FF9933; /* Highlight color */
+    font-weight: bold;
+    animation: fadeInOut 2s ease-in-out infinite;
+    white-space: nowrap; /* Prevent line break */
+    overflow: hidden; /* Avoid overflow of long words */
   }
   
-  section .description {
-    margin-top: 1.5rem;
-    background-color: #1F1B24; /* Secondary background */
-    color: #E0E0E0; /* Text color */
-    width: 75%;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  /* Fade-in and fade-out effect */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(1px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
   }
+
+  .hoskere-verse {
+    display: inline-block;
+    color: #FF9933; /* Default color */
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative; /* Required for animations */
+    animation: hoskereInlineSequence 10s infinite; /* Sequential animation */
+  }
+  
+  /* Animation Sequence */
+  @keyframes hoskereInlineSequence {
+    10% {
+      opacity: 1;
+      transform: scale(1.2); /* Slight zoom in */
+      letter-spacing: normal;
+    }
+    20% {
+      transform: translateX(-5px) skewX(5deg); /* Subtle distortion */
+      color: #0288D1; /* Blue */
+    }
+    30% {
+      letter-spacing: 0.1em; /* Rearrange letters */
+      transform: scale(1.1);
+      color: #00C853; /* Green */
+    }
+    50% {
+      letter-spacing: normal;
+      transform: translateY(0); /* Stabilize */
+      color: #FFEB3B; /* Yellow */
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1.3); /* Zoom in */
+      color: #9C27B0; /* Purple */
+    }
+    90% {
+      transform: scale(1);
+      letter-spacing: 0.05em; /* Slightly tighten letters */
+      color: #00E5FF; /* Cyan */
+    }
+    100% {
+      transform: scale(1);
+      letter-spacing: normal; /* Reset */
+      color: #FF9933; /* Original saffron */
+    }
+  }
+  
+  /* Glitch Effect on Hover */
+  .hoskere-verse:hover {
+    animation: glitchEffect 1s infinite; /* Activate glitch on hover */
+  }
+  
+  @keyframes glitchEffect {
+    0% {
+      text-shadow: 2px 2px #FF0000, -2px -2px #00FF00; /* Red/Green glitch */
+      transform: translateX(1px);
+    }
+    25% {
+      text-shadow: -2px 2px #FFD700, 2px -2px #8A2BE2; /* Gold/BlueViolet glitch */
+      transform: translateX(-1px);
+    }
+    50% {
+      text-shadow: -2px 2px #0000FF, 2px -2px #FF00FF; /* Blue/Purple glitch */
+      transform: translateX(-1px);
+    }
+    75% {
+      text-shadow: 2px 2px #FF69B4, -2px -2px #00CED1; /* HotPink/DarkTurquoise glitch */
+      transform: translateX(1px);
+    }
+    100% {
+      text-shadow: 2px -2px #FF9933, -2px 2px #0288D1; /* Original colors */
+      transform: translateX(0);
+    }
+  }
+  
+
   

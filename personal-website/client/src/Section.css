@@ -1,0 +1,62 @@
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section h1 {
+    font-size: 7rem;
+    font-weight: semi-bold;
+}
+
+.section p {
+    font-size: 1.51rem;
+    margin-bottom: 0.11rem;
+    font-style: italic;
+}
+
+.section a {
+    font-size: 1.5rem;
+    color: green;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: sideToSide 2s infinite; /* Apply side-to-side animation */
+}
+
+.section h1:hover {
+    animation: glitchEffect 0.6s infinite; /* Activate glitch on hover */
+}
+
+@keyframes glitchEffect {
+    0% {
+        text-shadow: 2px 2px #FF0000, -2px -2px #00FF00; /* Red/Green glitch */
+        transform: translateX(1px);
+    }
+    50% {
+        text-shadow: -2px 2px #0000FF, 2px -2px #FF00FF; /* Blue/Purple glitch */
+        transform: translateX(-1px);
+    }
+    100% {
+        text-shadow: 2px -2px #FF9933, -2px 2px #0288D1; /* Original colors */
+        transform: translateX(0);
+    }
+}
+
+@keyframes sideToSide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,2 +1,3 @@
 # YOU
-Personal Super App
+counters, 
+one liners in the home page with a heading.
