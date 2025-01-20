@@ -1,21 +1,24 @@
 import React from "react";
 import "./Projectiles.css";
-const Projectiles = ({ projects }) => {
-    return (
-        <div className="projects-grid">
-            {projects.map((project) => (
-                <div className="project-tile" key={project.id}>
-                    <img src={project.image} alt={project.name} className="project-image" />
-                    <div className="project-content">
-                        <h3 className="project-title">{project.name}</h3>
-                        <p className="project-description">{project.description}</p>
-                        <a href={project.link} className="see-more-link" target="_blank" rel="noopener noreferrer">
-                            See More
-                        </a>
-                    </div>
-                </div>
-            ))}
-        </div>
-    );
+
+const ProjectTile = ({ project }) => {
+  return (
+    <div className="project-tile">
+      <img src={project.image} alt={project.title} className="project-image" />
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+      <div className="tags">
+        {project.tags?.map((tag) => (
+          <span key={tag} className="tag">
+            #{tag}
+          </span>
+        ))}
+      </div>
+      <a href={project.link} target="_blank" rel="noreferrer">
+        <button className="see-more-btn">See More</button>
+      </a>
+    </div>
+  );
 };
-export default Projectiles;
+
+export default ProjectTile;

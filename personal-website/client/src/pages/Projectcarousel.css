@@ -1,9 +1,27 @@
-.carousel-container {
-    margin: 20px 0;
-    width: 100%;
-    overflow: hidden;
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.slick-prev:before, .slick-next:before {
-    color: #007acc;
+.dropdown-title {
+  font-size: 1.5rem;
+  color: #ff7f50;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
+
+.dropdown-select {
+  width: fit-content;
+  padding: 0.5rem;
+  border: 1px solid #af6e31;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  background: #121212;
+  color: #FF9933;
+}
+
+

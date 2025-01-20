@@ -1,52 +1,74 @@
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
 .project-tile {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  background: #121212; /* Light background for tiles */
+  color: white; /* Dark text */
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(213, 103, 29, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI Light', sans-serif;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-tile:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(74, 176, 72, 0.3);
 }
 
 .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
 }
 
-.project-content {
-    padding: 15px;
+.tags {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.project-title {
-    font-size: 1.25rem;
-    color: #007acc;
-    margin-bottom: 10px;
+.tag {
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: none;
+  color: transparent;
+  background-image: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: colorShift 3s linear infinite;
 }
 
-.project-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
+/* Gradient animation for tags */
+@keyframes colorShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.see-more-link {
-    text-decoration: none;
-    color: #007acc;
-    font-weight: bold;
-    transition: color 0.3s;
+.see-more-btn {
+  padding: 0.5rem 1.5rem;
+  background: transparent; /* Always black fill */
+  color: white;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500) 1;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+  animation: borderShift 3s linear infinite;
 }
 
-.see-more-link:hover {
-    color: #005f99;
+.see-more-btn:hover {
+  transform: scale(1.1); /* Enlarges on hover */
+  background: transparent; /* No fill */
+}
+
+@keyframes borderShift {
+  0% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
+  50% { border-image-source: linear-gradient(135deg, #ff1493, #00ffff, #ff7f50, #ff4500); }
+  100% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
 }

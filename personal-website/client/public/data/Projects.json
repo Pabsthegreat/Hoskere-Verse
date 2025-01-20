@@ -3,22 +3,25 @@
       {
         "id": 1,
         "title": "Personal Portfolio Website",
-        "image": "/images/download.jpg",
+        "image": "/images/download.jpeg",
         "description": "A fully responsive portfolio website showcasing my projects, blog posts, and certifications. Built using React and CSS.",
+        "tags": ["React", "CSS", "Responsive Design"],
         "link": "https://myportfolio.com"
       },
       {
         "id": 2,
         "title": "Typing Test App",
-        "image": "/images/download.jpg",
+        "image": "/images/download.jpeg",
         "description": "A typing speed test app that calculates words per minute and accuracy. Developed using React and Node.js.",
+        "tags": ["React", "Node.js", "Express"],
         "link": "https://github.com/username/typing-test"
       },
       {
         "id": 3,
         "title": "Diabetes Management System",
-        "image": "/images/download.jpg",
+        "image": "/images/download.jpeg",
         "description": "An AI-powered system that recommends personalized diet and exercise plans for diabetic patients in India. Built during an internship at RAPID Centre.",
+        "tags": ["Python", "Machine Learning", "Flask"],
         "link": "https://github.com/username/diabetes-management"
       },
       {
@@ -26,6 +29,7 @@
         "title": "Arcade-Style Game",
         "image": "/images/download.jpeg",
         "description": "An engaging arcade-style game developed using Pygame and MySQL, featuring multiple levels and challenges.",
+        "tags": ["Python", "Pygame", "MySQL"],
         "link": "https://github.com/username/arcade-game"
       }
       ,
@@ -34,6 +38,7 @@
         "title": "IPL Auction UI",
         "image": "/images/download.jpeg",
         "description": "A full-stack e-commerce website with user authentication, product management, and payment integration. Built using MERN stack.",
+        "tags": ["React", "Node.js", "MongoDB"],
         "link": "https://github.com/username/arcade-game"
       }
     ]

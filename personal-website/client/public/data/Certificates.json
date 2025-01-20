@@ -2,21 +2,27 @@
     "certificates": [
         {
         "id": 1,
-        "name": "AWS Certified Cloud Practitioner",
+        "title": "AWS Certified Cloud Practitioner",
         "link": "https://example.com/certification/aws",
+        "description": "This certification validates the ability to define basic cloud infrastructure and architectural principles.",
+        "tags": ["AWS", "Cloud Computing"],
         "image": "/images/download.jpeg"
         },
         {
         "id": 2,
-        "name": "Google Data Analytics Professional Certificate",
+        "title": "Google Data Analytics Professional Certificate",
         "link": "https://example.com/certification/meta",
+        "description": "This certificate demonstrates proficiency in analyzing and interpreting data to make informed business decisions.",
+        "tags": ["Data Analytics", "Google"],
         "image": "/images/download.jpeg"
         },
         {
-            "id": 2,
-            "name": "Meta Front-End Developer",
-            "link": "https://example.com/certification/meta",
-            "image": "/images/download.jpeg"
+        "id": 3,
+        "title": "Meta Front-End Developer",
+        "link": "https://example.com/certification/meta",
+        "description": "This certification validates the ability to design and develop responsive websites using HTML, CSS, and JavaScript.",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "/images/download.jpeg"
         }
     ]
 }

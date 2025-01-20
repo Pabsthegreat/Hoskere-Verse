@@ -1,5 +1,5 @@
 import './Certifications.css';   
-
+import ProjectTile from './Projectiles';
 import React, { useState, useEffect } from "react";
 
 const Certifications = () => {
@@ -34,15 +34,11 @@ const Certifications = () => {
             ) : (
                 <div className="certificates">
                     {certificates.map((post) => (
-            <div key={post.id} className="certificate">
-              <img src={post.image} alt={post.name} />
-              <h2>{post.name}</h2>
-              <p>{post.link}</p>
-            </div>
-          ))}
+                            post.image && <ProjectTile key={post.id} post={post} />
+                        ))}
+                    </div>
+          )}
         </div>
-      )}
-    </div>
   );
 };
 

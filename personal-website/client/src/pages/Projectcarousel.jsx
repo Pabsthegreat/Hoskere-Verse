@@ -1,29 +1,25 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import './Projectcarousel.css';
+import React from "react";
+import "./Projectcarousel.css";
 
-const Projectcarousel = ({ projects }) => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
-
-    return (
-        <div className="carousel-container">
-            <Slider {...settings}>
-                {projects.map((project) => (
-                    <div key={project.id}>
-                        <img src={project.image} alt={project.name} style={{ width: '100%', borderRadius: '10px' }} />
-                        <h2>{project.name}</h2>
-                        <p>{project.description}</p>
-                    </div>
-                ))}
-            </Slider>
-        </div>
-    );
+const Projectcarousel = ({ title, filters, selectedFilters, onToggleFilter }) => {
+  return (
+    <div className="dropdown">
+      <select
+        className="dropdown-select"
+        onChange={(e) => onToggleFilter(e.target.value)}
+        value={selectedFilters[-1]||""}
+      >
+        <option value="" disabled>
+          {title}
+        </option>
+        {filters.map((filter, index) => (
+          <option key={index} value={filter}>
+            {filter}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
 };
+
 export default Projectcarousel;

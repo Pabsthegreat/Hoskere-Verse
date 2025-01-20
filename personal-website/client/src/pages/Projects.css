@@ -1,0 +1,63 @@
+.projects-page {
+  padding: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white; /* Dark text */
+  background: #121212; /* Neutral white background */
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #af6e31;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  background:#121212;
+  color:#FF9933;
+}
+
+.search-bar input::placeholder {
+  color: #FF9933;
+}
+
+.search-bar :active {
+  border: 1px solid #FF9933;
+}
+
+.active-filters {
+  margin-bottom: 1rem;
+}
+
+.filter-tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: #e0e0e0;
+  color: #333;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three projects per row */
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.no-projects {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 2rem;
+}
