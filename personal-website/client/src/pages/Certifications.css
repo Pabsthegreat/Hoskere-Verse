@@ -1,0 +1,106 @@
+.certifications-page {
+    padding: 2rem;
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI Light', sans-serif;
+  }
+  
+  .certifications-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #FF9933;
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .certificate-tile {
+    background: #121212; /* Light background for tiles */
+    color: white; /* Dark text */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 10px 15px rgba(213, 103, 29, 0.2);
+    text-align: center;
+    font-family: 'Segoe UI Light', sans-serif;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .certificate-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(74, 176, 72, 0.3);
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .certificate-content {
+    padding: 1rem;
+  }
+  
+  .certificate-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0.5rem 0;
+    color: #FF9933;
+  }
+  
+  .certificate-description {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    color: white;
+  }
+  
+  .certificate-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .certificate-tag {
+    font-size: 0.875rem;
+    color: #FF9933;;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+  }
+  
+
+  .certificate-button {
+    padding: 0.5rem 1.5rem;
+    background: transparent; /* Always black fill */
+    color: white;
+    justify-self: baseline;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500) 1;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s, border-color 0.5s;
+    animation: borderShift 5s linear infinite;
+  }
+  
+  .certificate-button:hover {
+    transform: scale(1.1); /* Enlarges on hover */
+    background: transparent; /* No fill */
+  }
+  
+  @keyframes borderShift {
+    0% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
+    50% { border-image-source: linear-gradient(135deg, #ff1493, #00ffff, #ff7f50, #ff4500); }
+    100% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
+  }
+  
+  

@@ -3,8 +3,9 @@ import './Resume.css';
 
 const Resume = () => {
     return (
-        <div className="resume-container">
+        <div className="resume-page">
             <h1 className="resume-heading">My Resume</h1>
+
             <div className="resume-section">
                 <h2>Education</h2>
                 <p><strong>PES University, Bengaluru</strong> - Bachelor of Technology in Computer Science (2023-2027)</p>
@@ -47,7 +48,27 @@ const Resume = () => {
                     <li>Developed an arcade-style game using Pygame and MySQL.</li>
                 </ul>
             </div>
-            <a href="/resume.pdf" download="Adarsh_Arun_Hoskere_Resume" className="download-button">
+
+            <div className="resume-section">
+                <h2>Languages Spoken</h2>
+                <ul className="pill-list">
+                    <li>English</li>
+                    <li>Kannada</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+
+            <div className="resume-section">
+                <h2>Soft Skills</h2>
+                <ul className="pill-list">
+                    <li>Communication</li>
+                    <li>Leadership</li>
+                    <li>Creativity</li>
+                    <li>Team Management</li>
+                </ul>
+            </div>
+
+            <a href="/images/AdarshArunHoskreResume.png" download="Adarsh_Arun_Hoskere_Resume" className="download-button">
                 Download Resume
             </a>
         </div>
