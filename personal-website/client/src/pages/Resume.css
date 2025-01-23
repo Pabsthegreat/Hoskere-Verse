@@ -1,14 +1,14 @@
 .resume-page {
     padding: 2rem;
     color: #fff;
-    font-family: 'Segoe UI Light', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .resume-heading {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #ff6347;
-    border-bottom: 2px solid #ff4500;
+    color: #FF9933;
+    border-bottom: 2px solid #FF9933;
     padding-bottom: 0.5rem;
 }
 
@@ -19,28 +19,48 @@
 .resume-section h2 {
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
-    color: #ff4500;
+    color: #FF9933
 }
 
-.resume-section p,
-.resume-section ul {
-    margin-left: 1.5rem;
+.education-details, .experience-item, .certifications-container, .achievements-container {
+    padding: 1rem;
+    background-color: rgba(255, 99, 71, 0.1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
-.resume-section ul {
-    list-style: disc;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.pill-list {
-    list-style: none;
+.skills-category {
+    flex: 1;
+    min-width: 200px;
+}
+
+.skills-category h3 {
+    font-size: 1.4rem;
+    color: #FF9933;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item {
+    background-color: rgba(255, 99, 71, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.pill-container {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    padding: 0;
-    margin: 0;
 }
 
-.pill-list li {
+.pill {
     background: linear-gradient(90deg, #ff7f50, #ff6347, #ff4500);
     color: #fff;
     padding: 0.6rem 1.2rem;
@@ -51,7 +71,7 @@
     cursor: pointer;
 }
 
-.pill-list li:hover {
+.pill:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 4px 10px rgba(255, 99, 71, 0.5);
 }
@@ -59,7 +79,7 @@
 .download-button {
     text-decoration: none;
     color: #fff;
-    background: #ff4500;
+    background: #FF9933;
     padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
