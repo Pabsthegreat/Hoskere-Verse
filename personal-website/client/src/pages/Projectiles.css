@@ -72,3 +72,68 @@
   50% { border-image-source: linear-gradient(135deg, #ff1493, #00ffff, #ff7f50, #ff4500); }
   100% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
 }
+
+/* Responsive design for project tiles */
+@media (max-width: 768px) {
+  .project-tile {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    height: 120px;
+  }
+
+  .tags {
+    margin: 0.75rem 0;
+    gap: 0.4rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+  }
+
+  .see-more-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-tile {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .project-image {
+    height: 100px;
+  }
+
+  .tags {
+    margin: 0.5rem 0;
+    gap: 0.3rem;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+  }
+
+  .see-more-btn {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-tile {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-tile {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

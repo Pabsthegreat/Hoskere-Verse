@@ -155,6 +155,28 @@ nav ul {
   .header-title {
     font-size: 1rem;
   }
+  nav ul {
+    flex-direction: column; /* Vertical layout for links */
+    gap: 0.5rem;
+    position: absolute;
+    top: 100%; /* Position below the nav bar */
+    left: 0;
+    width: 100%;
+    background-color: #121212; /* Same background as header */
+    padding: 0.5rem;
+    display: none; /* Hide by default */
+    align-items: center;
+  }
+
+  .nav-menu.open ul {
+    display: flex; /* Show when menu is open */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 
   nav a {
     font-size: 0.9rem;
@@ -169,6 +191,28 @@ nav ul {
   nav a {
     font-size: 0.8rem;
   }
+  nav ul {
+    flex-direction: column; /* Vertical layout for links */
+    gap: 0.5rem;
+    position: absolute;
+    top: 100%; /* Position below the nav bar */
+    left: 0;
+    width: 100%;
+    background-color: #121212; /* Same background as header */
+    padding: 0.5rem;
+    display: none; /* Hide by default */
+    align-items: center;
+  }
+
+  .nav-menu.open ul {
+    display: flex; /* Show when menu is open */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 
   .menu-icon {
     font-size: 1.2rem;

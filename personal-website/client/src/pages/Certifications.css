@@ -103,4 +103,72 @@
     100% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
   }
   
-  
+  @media (max-width: 1200px) {
+    .certifications-heading {
+      font-size: 2rem;
+    }
+
+    .certificate-tile {
+      padding: 0.8rem;
+    }
+
+    .certificate-title {
+      font-size: 1.25rem;
+    }
+
+    .certificate-description {
+      font-size: 0.875rem;
+    }
+
+    .certificate-button {
+      padding: 0.4rem 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .certifications-page {
+      padding: 1rem;
+    }
+
+    .certifications-heading {
+      font-size: 1.75rem;
+    }
+
+    .certificate-tile {
+      padding: 0.6rem;
+    }
+
+    .certificate-title {
+      font-size: 1.125rem;
+    }
+
+    .certificate-description {
+      font-size: 0.75rem;
+    }
+
+    .certificate-button {
+      padding: 0.3rem 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .certifications-heading {
+      font-size: 1.5rem;
+    }
+
+    .certificate-tile {
+      padding: 0.5rem;
+    }
+
+    .certificate-title {
+      font-size: 1rem;
+    }
+
+    .certificate-description {
+      font-size: 0.625rem;
+    }
+
+    .certificate-button {
+      padding: 0.2rem 0.8rem;
+    }
+  }

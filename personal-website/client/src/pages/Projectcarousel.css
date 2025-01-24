@@ -23,5 +23,39 @@
   background: #121212;
   color: #FF9933;
 }
+@media (max-width: 768px) {
+  .dropdown {
+    flex-direction: column;
+  }
 
+  .dropdown-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .dropdown-select {
+    width: 100%;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown-title {
+    font-size: 1rem;
+  }
+
+  .dropdown-select {
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-title {
+    font-size: 2rem;
+  }
+
+  .dropdown-select {
+    padding: 0.6rem;
+  }
+}
 
