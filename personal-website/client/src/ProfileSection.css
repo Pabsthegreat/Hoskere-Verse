@@ -76,7 +76,7 @@
       color: #0288D1; /* Blue */
     }
     30% {
-      letter-spacing: 0.1em; /* Rearrange letters */
+
       transform: scale(1.1);
       color: #00C853; /* Green */
     }
@@ -131,4 +131,98 @@
   }
   
 
-  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .main .description h1 {
+      font-size: 5rem;
+    }
+    .main .description > h3 {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .main .description h1 {
+      font-size: 4rem;
+    }
+
+    .main .description > h3 {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main .description h1 {
+      font-size: 3rem;
+    }
+
+    .main .description > h3 {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .main .description h1 {
+      font-size: 2.5rem;
+    }
+
+    .main .description > h3 {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .main .description h1 {
+      font-size: 2rem;
+    }
+
+    .main .description > h3 {
+      font-size: 0.5rem;
+    }
+  }
+
+  /* Center justify description */
+  .main .description {
+    text-align: center;
+  }
+
+  /* Responsive adjustments for adjective-carousel */
+  @media (max-width: 768px) {
+    .adjective-carousel {
+      width: 15ch;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .adjective-carousel {
+      width: 13ch;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .adjective-carousel {
+      width: 11ch;
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Responsive adjustments for hoskere-verse */
+  @media (max-width: 768px) {
+    .hoskere-verse {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hoskere-verse {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .hoskere-verse {
+      font-size: 1.2rem;
+    }
+  }

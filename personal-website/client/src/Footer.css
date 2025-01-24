@@ -47,3 +47,34 @@
 main {
   flex: 1; /* Pushes footer to the bottom */
 }
+/* Responsive design for different screen widths */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer-link {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer-link {
+    display: block;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}

@@ -165,7 +165,6 @@
 }
 
 .p_section {
-   
     margin-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -221,7 +220,7 @@
     gap: 0.5rem;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.05);
@@ -229,7 +228,6 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-left: 4px solid #ff9933;
-
     gap: 1rem;
 }
 
@@ -249,3 +247,134 @@
     line-height: 1.4;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust grid layout */
+    .resume-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Right section appears first */
+    .resume-right {
+        order: 1;
+    }
+
+    /* Left section appears below */
+    .resume-left {
+        order: 2;
+    }
+
+    /* Center heading text */
+    .resume-heading {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Reduce padding */
+    .resume-page {
+        padding: 1rem;
+    }
+
+    /* Adjust button size */
+    .download-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 1024px) {
+    .resume-heading {
+        font-size: 2rem;
+    }
+
+    .section1 h3, .experience h3, .projects h3, .certifications h3, .prog_section1 h3, .contact h3 {
+        font-size: 1rem;
+    }
+
+    .resume-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .resume-item p, .section1-item, .p_section, .contact-items {
+        font-size: 0.8rem;
+    }
+
+    .pill, .p_section .pill {
+        font-size: 0.8rem;
+    }
+
+    .download-button {
+        font-size: 1rem;
+    }
+
+    .prog_section1 {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-heading {
+        font-size: 1.8rem;
+    }
+
+    .section1 h3, .experience h3, .projects h3, .certifications h3, .prog_section1 h3, .contact h3 {
+        font-size: 0.9rem;
+    }
+
+    .resume-item h4 {
+        font-size: 0.8rem;
+    }
+
+    .resume-item p, .section1-item, .p_section, .contact-items {
+        font-size: 0.7rem;
+    }
+
+    .pill, .p_section .pill {
+        font-size: 0.7rem;
+    }
+
+    .download-button {
+        font-size: 0.9rem;
+    }
+
+    .prog_section1 {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-heading {
+        font-size: 1.5rem;
+    }
+
+    .section1 h3, .experience h3, .projects h3, .certifications h3, .prog_section1 h3, .contact h3 {
+        font-size: 0.8rem;
+    }
+
+    .resume-item h4 {
+        font-size: 0.7rem;
+    }
+
+    .resume-item p, .section1-item, .p_section, .contact-items {
+        font-size: 0.6rem;
+    }
+
+    .pill, .p_section .pill {
+        font-size: 0.6rem;
+    }
+
+    .download-button {
+        font-size: 0.8rem;
+    }
+
+    .resume-page {
+        padding: 0.5rem;
+    }
+
+    .prog_section1 {
+        flex-wrap: wrap;
+    }
+}

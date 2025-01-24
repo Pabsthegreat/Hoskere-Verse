@@ -24,9 +24,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="menu-icon" onClick={toggleMenu}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+        <span role="img" aria-label="menu">🍔</span>
       </div>
     </header>
   );
