@@ -1,9 +1,9 @@
-import './BlogPosts.css';   
-
 import React, { useState, useEffect } from "react";
+import "./BlogPosts.css";
 
 const BlogPosts = () => {
-  const [posts, setPosts] = useState([]);
+  const [blogs, setBlogs] = useState([]);
+  const [selectedBlog, setSelectedBlog] = useState(null);
 
   useEffect(() => {
     fetch("/data/BlogPosts.json")
@@ -14,30 +14,79 @@ const BlogPosts = () => {
         return response.json();
       })
       .then((data) => {
-        console.log("Fetched data:", data); // Log the data for debugging
-        if (data.blogPosts && Array.isArray(data.blogPosts)) {
-          setPosts(data.blogPosts); // Access the "blogPosts" array
+        if (data.blogs && Array.isArray(data.blogs)) {
+          setBlogs(data.blogs);
         } else {
-          console.error("Fetched data does not contain 'blogPosts' array:", data);
+          console.error("Fetched data does not contain 'blogs' array:", data);
         }
       })
       .catch((error) => {
-        console.error("Error fetching blog posts:", error);
+        console.error("Error fetching blogs:", error);
       });
   }, []);
 
+  const handleViewMore = (blog) => {
+    setSelectedBlog(blog);
+  };
+
+  const handleBack = () => {
+    setSelectedBlog(null);
+  };
+
   return (
-    <div>
-      <h1>Blog Posts</h1>
-      {posts.length === 0 ? (
-        <p>Loading blog posts or no posts available...</p>
+    <div className="blogposts-page">
+      <h1 className="blogposts-heading">blogposts</h1>
+      {selectedBlog ? (
+        <div className="selected-blog">
+          <h2 className="blog-title">{selectedBlog.title}</h2>
+          <img
+            src={selectedBlog.image}
+            alt={selectedBlog.title}
+            className="blog-image"
+          />
+          <p className="blog-fulltext">{selectedBlog.fulltext}</p>
+          <button className="blog-button" onClick={handleBack}>
+            Back to All Posts
+          </button>
+          <h3 className="other-blogs-heading">Other Blogs:</h3>
+          <div className="other-blogs-grid">
+            {blogs
+              .filter((blog) => blog.id !== selectedBlog.id)
+              .map((blog) => (
+                <div
+                  key={blog.id}
+                  className="other-blog-tile"
+                  onClick={() => handleViewMore(blog)}
+                >
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="other-blog-image"
+                  />
+                  <h4 className="other-blog-title">{blog.title}</h4>
+                </div>
+              ))}
+          </div>
+        </div>
       ) : (
-        <div className="blog-posts">
-          {posts.map((post) => (
-            <div key={post.id} className="blog-post">
-              <img src={post.image} alt={post.heading} />
-              <h2>{post.heading}</h2>
-              <p>{post.description}</p>
+        <div className="blogs-grid">
+          {blogs.map((blog) => (
+            <div key={blog.id} className="blog-tile">
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="blog-image"
+              />
+              <div className="blog-content">
+                <h2 className="blog-title">{blog.title}</h2>
+                <p className="blog-description">{blog.description}</p>
+                <button
+                  className="blog-button"
+                  onClick={() => handleViewMore(blog)}
+                >
+                  View More
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -47,4 +96,3 @@ const BlogPosts = () => {
 };
 
 export default BlogPosts;
-

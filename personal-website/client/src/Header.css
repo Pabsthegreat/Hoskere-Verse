@@ -10,6 +10,7 @@ header {
   color: #E0E0E0;
   padding: 0.8rem 2rem;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   background-color: #121212;
@@ -23,6 +24,7 @@ header {
 
 .header-title {
   margin: 0;
+  display: flex ;
   font-size: 1.5rem;
   font-weight: bold;
   color: #FF9933;
@@ -96,25 +98,25 @@ nav ul {
 }
 
 /* Responsive design for different screen widths */
-@media (max-width: 1024px) {
+@media (min-width: 1025px) {
   .header-title {
     font-size: 1.3rem;
   }
-
+  .header-title-container {
+    flex: 1;
+  }
   nav ul {
     gap: 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 0.5rem 1rem;
-  }
-
+@media (min-width: 769px) and (max-width: 1024px) {
   .header-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
-
+  .header-title-container {
+    flex: 1;
+  }
   nav ul {
     flex-direction: column; /* Vertical layout for links */
     gap: 1rem;
@@ -139,6 +141,47 @@ nav ul {
 
   .menu-icon {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+  .header-title-container {
+    flex: 1;
+  }
+  nav ul {
+    flex-direction: column; /* Vertical layout for links */
+    gap: 1rem;
+    position: absolute;
+    top: 100%; /* Position below the nav bar */
+    left: 0;
+    width: 100%;
+    background-color: #121212; /* Same background as header */
+    padding: 1rem;
+    display: none; /* Hide by default */
+    align-items: center;
+  }
+
+  .nav-menu.open ul {
+    display: flex; /* Show when menu is open */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+  .header-title-container {
+    flex: 1;
   }
 }
 
@@ -181,6 +224,9 @@ nav ul {
   nav a {
     font-size: 0.9rem;
   }
+  .header-title-container {
+    flex: 1;
+  }
 }
 
 @media (max-width: 320px) {
@@ -216,5 +262,8 @@ nav ul {
 
   .menu-icon {
     font-size: 1.2rem;
+  }
+  .header-title-container {
+    flex: 1;
   }
 }
