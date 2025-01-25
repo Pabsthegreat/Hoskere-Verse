@@ -12,20 +12,20 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-title-container">
-        <Link to='/'><h1 className="header-title">Adarsh Arun Hoskere</h1></Link>
+        <Link to='/' title="Home"><h1 className="header-title">Adarsh Arun Hoskere</h1></Link>
       </div>
       <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><h3><Link to="/certifications">Certifications</Link></h3></li>
-          <li><h3><Link to="/blogposts">BlogPosts</Link></h3></li>
-          <li><h3><Link to="/profile">Profile</Link></h3></li>
-          <li><h3><Link to="/projects">Projects</Link></h3></li>
-          <li><h3><Link to="/resume">Resume</Link></h3></li>
+          <li><h3><Link to="/certifications" title="Certifications">Certifications</Link></h3></li>
+          <li><h3><Link to="/blogposts" title="Blog Posts">Blog Posts</Link></h3></li>
+          <li><h3><Link to="/profile" title="Profile">Profile</Link></h3></li>
+          <li><h3><Link to="/projects" title="Projects">Projects</Link></h3></li>
+          <li><h3><Link to="/resume" title="Resume">Resume</Link></h3></li>
         </ul>
       </nav>
-      <div className="menu-icon" onClick={toggleMenu}>
+      <button className="menu-icon" onClick={toggleMenu} aria-label="Toggle menu">
         <span role="img" aria-label="menu">🍔</span>
-      </div>
+      </button>
     </header>
   );
 };

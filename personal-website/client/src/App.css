@@ -48,7 +48,6 @@ a:hover {
 }
 
 button {
-  background-color: #FF9933; /* Saffron background */
   color: white; /* White text */
   border: none;
   padding: 10px 20px;
@@ -56,9 +55,6 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #E07B29; /* Darker saffron for hover effect */
-}
 
 button, a {
   cursor: pointer;

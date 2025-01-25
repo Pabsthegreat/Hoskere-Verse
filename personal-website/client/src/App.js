@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Header from './Header.js';
 import ProfileSection from './ProfileSection.js';
 import Section from './Section.js';
@@ -22,6 +23,11 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <Helmet>
+        <title>Personal Website</title>
+        <meta name="description" content="Welcome to my personal website. Learn more about my professional journey, projects, certifications, and blog posts." />
+        <meta name="keywords" content="personal website, profile, resume, projects, certifications, blog posts" />
+      </Helmet>
       <Router>
         <Header />
         <main className="main-content">

@@ -1,9 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./Profile.css";
 
 const Profile = () => {
   return (
     <div className="profile-page">
+      <Helmet>
+        <title>Adarsh Hoskere - Personal Profile</title>
+        <meta name="description" content="Welcome to the Hoskere-verse! I’m Adarsh Hoskere, a Computer Science student at PES University, Bengaluru, India. Explore my passion for coding, creativity, and technology." />
+        <meta name="keywords" content="Adarsh Hoskere, Computer Science, PES University, tech enthusiast, backend engineering, cloud enthusiast, leadership, collaboration, adaptability, creativity" />
+      </Helmet>
+
       {/* Welcome Section */}
       <section className="welcome-section profile-section">
         <h1>Welcome to the <span className="highlight">Hoskere-verse</span>!</h1>
@@ -24,7 +31,7 @@ const Profile = () => {
 
       {/* Skills Section */}
       <section className="skills-section profile-section">
-        <h2>What I Bring to the Table</h2>
+        <h2>Skills</h2>
         <ul>
           <li><span className="highlight">Backend Engineering & Cloud Enthusiast:</span> Building robust systems that deliver high performance.</li>
           <li><span className="highlight">Leadership & Collaboration:</span> As the Tech Head of the Quotient Quiz Club, I’ve honed my skills in managing teams and organizing innovative projects like Conquiztador.</li>
@@ -34,7 +41,7 @@ const Profile = () => {
 
       {/* Vision Section */}
       <section className="vision-section profile-section">
-        <h2>What Drives Me?</h2>
+        <h2>Vision</h2>
         <p>
           In this ever-changing world, technology is the key to unlocking new possibilities and solving complex problems. I believe my passion for solving problems
           and learning constantly helps me be the best version of myself. I want to create innovative solutions that make a difference in people’s lives and contribute
@@ -44,7 +51,7 @@ const Profile = () => {
 
       {/* Contact Section */}
       <section className="contact-section profile-section">
-        <h2>Let’s Connect!</h2>
+        <h2>Contact</h2>
         <p>
           I would love to hear from you, whether it be about tech, books, fitness, or anything else. Feel free to email me at adarsh11018@gmail.com or connect on:
         </p>

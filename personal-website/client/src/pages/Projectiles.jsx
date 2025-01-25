@@ -3,7 +3,7 @@ import "./Projectiles.css";
 
 const ProjectTile = ({ project }) => {
   return (
-    <div className="project-tile">
+    <article className="project-tile">
       <img src={project.image} alt={project.title} className="project-image" />
       <h3>{project.title}</h3>
       <p>{project.description}</p>
@@ -15,9 +15,9 @@ const ProjectTile = ({ project }) => {
         ))}
       </div>
       <a href={project.link} target="_blank" rel="noreferrer">
-        <button className="see-more-btn">See More</button>
+        <button className="see-more-btn" aria-label={`See more about ${project.title}`}>See More</button>
       </a>
-    </div>
+    </article>
   );
 };
 

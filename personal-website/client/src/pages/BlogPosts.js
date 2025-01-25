@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "./BlogPosts.css";
 
 const BlogPosts = () => {
@@ -35,9 +36,13 @@ const BlogPosts = () => {
 
   return (
     <div className="blogposts-page">
-      <h1 className="blogposts-heading">blogposts</h1>
+      <Helmet>
+        <title>{selectedBlog ? selectedBlog.title : "Blog Posts"}</title>
+        <meta name="description" content="Read our latest blog posts on various topics." />
+      </Helmet>
+      <h1 className="blogposts-heading">Blog Posts</h1>
       {selectedBlog ? (
-        <div className="selected-blog">
+        <article className="selected-blog">
           <h2 className="blog-title">{selectedBlog.title}</h2>
           <img
             src={selectedBlog.image}
@@ -67,11 +72,11 @@ const BlogPosts = () => {
                 </div>
               ))}
           </div>
-        </div>
+        </article>
       ) : (
-        <div className="blogs-grid">
+        <section className="blogs-grid">
           {blogs.map((blog) => (
-            <div key={blog.id} className="blog-tile">
+            <article key={blog.id} className="blog-tile">
               <img
                 src={blog.image}
                 alt={blog.title}
@@ -87,9 +92,9 @@ const BlogPosts = () => {
                   View More
                 </button>
               </div>
-            </div>
+            </article>
           ))}
-        </div>
+        </section>
       )}
     </div>
   );

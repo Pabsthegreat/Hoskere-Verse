@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './ProfileSection.css';
 
 const adjectives = [
@@ -40,10 +41,14 @@ const ProfileSection = () => {
 
   return (
     <section className="main">
+      <Helmet>
+        <title>Hoskere-verse | Your Tech Guy</title>
+        <meta name="description" content="Welcome to Hoskere-verse. I'm your creative, passionate, and dedicated tech guy. Explore my work and learn more about me!" />
+      </Helmet>
       <div className="description">
-        <h3>You're now in</h3>
-        <h1 className='hoskere-verse'>Hoskere-verse.</h1>
-        <p>I'm your <h2 className="adjective-carousel"> {adjectives[currentAdjective]}</h2> tech guy.</p>
+        <h3>Welcome to</h3>
+        <h1 className='hoskere-verse'>Hoskere-verse</h1>
+        <p>I'm your <span className="adjective-carousel">{adjectives[currentAdjective]}</span> tech guy.</p>
         <p>I'm excited to show you my work and tell you more about myself!</p>
       </div>
     </section>

@@ -1,15 +1,19 @@
 import React from 'react';
 import './Section.css';
 
-const Section = ({ title, description, seemore,link }) => (
+const Section = ({ title, description, seemore, link }) => (
   <section className='section'>
-    <h1>{title}</h1>
-    
-    <p>{description}</p>
-    
-    <a href={link}>
-      {seemore} --&gt;
-    </a>
+    <header>
+      <h1>{title}</h1>
+    </header>
+    <article>
+      <p>{description}</p>
+    </article>
+    <footer>
+      <a href={link} aria-label={`Read more about ${title}`} title={`Read more about ${title}`}>
+        {seemore} &rarr;
+      </a>
+    </footer>
   </section>
 );
 

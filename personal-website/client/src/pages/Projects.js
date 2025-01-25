@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Carousel from "./Projectcarousel";
 import ProjectTile from "./Projectiles";
 import "./Projects.css";
@@ -51,7 +52,11 @@ const Projects = () => {
 
   return (
     <div className="projects-page">
-        <h3>Explore Projects</h3>
+      <Helmet>
+        <title>Projects - Your Name</title>
+        <meta name="description" content="Explore various projects by Your Name, including web development, AI & ML, and more." />
+      </Helmet>
+      <h1>Explore Projects</h1>
       <div className="search-bar">
         <input
           type="text"

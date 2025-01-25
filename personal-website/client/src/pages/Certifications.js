@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "./Certifications.css";
 
 const Certifications = () => {
@@ -26,13 +27,17 @@ const Certifications = () => {
 
   return (
     <div className="certifications-page">
+      <Helmet>
+        <title>Certifications - My Personal Website</title>
+        <meta name="description" content="List of certifications and achievements." />
+      </Helmet>
       <h1 className="certifications-heading">Certifications</h1>
       {certificates.length === 0 ? (
         <p>Loading certifications or no certificates available...</p>
       ) : (
-        <div className="certificates-grid">
+        <section className="certificates-grid">
           {certificates.map((certificate) => (
-            <div key={certificate.id} className="certificate-tile">
+            <article key={certificate.id} className="certificate-tile">
               <img
                 src={certificate.image}
                 alt={certificate.title}
@@ -48,18 +53,18 @@ const Certifications = () => {
                     </span>
                   ))}
                 </div>
-                <button
+                <a
                   href={certificate.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="certificate-button"
                 >
                   View Certification
-                </button>
+                </a>
               </div>
-            </div>
+            </article>
           ))}
-        </div>
+        </section>
       )}
     </div>
   );
