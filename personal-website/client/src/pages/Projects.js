@@ -57,6 +57,7 @@ const Projects = () => {
         <meta name="description" content="Explore various projects by Your Name, including web development, AI & ML, and more." />
       </Helmet>
       <h1>Explore Projects</h1>
+      <br></br>
       <div className="search-bar">
         <input
           type="text"
@@ -67,19 +68,19 @@ const Projects = () => {
       </div>
       <div className="filter-section">
         <Carousel
-          title="Filter by Language/Framework"
+          title="Languages & Frameworks"
           filters={["React", "Node.js", "Python", "CSS", "MongoDB"]}
           selectedFilters={filters.tags}
           onToggleFilter={toggleFilter}
         />
         <Carousel
-          title="Filter by Topic"
+          title="Topics"
           filters={["AI & ML", "Full Stack", "Game Development", "Frontend", "Backend", "Mobile", "Web"]}
           selectedFilters={filters.tags}
           onToggleFilter={toggleFilter}
         />
         <Carousel 
-            title="Filter by Purpose"
+            title="Purpose"
             filters={["Class Project", "Personal Project", "Hackathon", "Startup", "Freelance"]}
             selectedFilters={filters.tags}
             onToggleFilter={toggleFilter}
@@ -108,7 +109,7 @@ const Projects = () => {
         </div>
       ) : (
         <div className="no-projects">
-          Looking for a new Idea? <br /> Contact me, we can make it happen!
+          Looking for a new idea? <br /> Contact me, we can make it happen!
         </div>
       )}
     </div>

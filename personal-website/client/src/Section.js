@@ -2,7 +2,7 @@ import React from 'react';
 import './Section.css';
 
 const Section = ({ title, description, seemore, link }) => (
-  <section className='section'>
+  <section className='section2'>
     <header>
       <h1>{title}</h1>
     </header>
@@ -10,8 +10,8 @@ const Section = ({ title, description, seemore, link }) => (
       <p>{description}</p>
     </article>
     <footer>
-      <a href={link} aria-label={`Read more about ${title}`} title={`Read more about ${title}`}>
-        {seemore} &rarr;
+      <a href={link} aria-label={`Read more about ${title}`} title={`Read more about ${title}`} className='seemore'>
+        <p>{seemore} &rarr;</p>
       </a>
     </footer>
   </section>

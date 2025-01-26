@@ -10,7 +10,7 @@ const Resume = () => {
                 <meta name="description" content="Resume of Adarsh Hoskere, a Computer Science student at PES University, Bengaluru." />
                 <meta name="keywords" content="Adarsh Hoskere, Resume, Computer Science, PES University, Bengaluru" />
             </Helmet>
-            <header>
+            <header className="resume-header">
                 <h1 className="resume-heading">Adarsh Hoskere</h1>
             </header>
             <main className="resume-grid">
@@ -22,13 +22,13 @@ const Resume = () => {
                             <strong>Bachelor of Technology - Computer Science</strong>
                             <br /> PES University, Bengaluru (2023-2027)
                         </p>
+                        <p className="section1-item">CGPA: 8.5 (till now)</p>
                         <p className="section1-item">
                             <strong>Class 1 - 12</strong>
                             <br /> Sri Kumaran Children's Home CBSE, Bengaluru (2011-2023)
-                            <p>Class 10: 93.4%</p>
-                            <p>Class 12: 93.4%</p>
                         </p>
-                        <p className="section1-item">CGPA: 8.5 (till now)</p>
+                        <p>Class 10: 93.4%</p>
+                            <p>Class 12: 93.4%</p>
                     </div>
 
                     <div className="section1">
@@ -55,6 +55,14 @@ const Resume = () => {
                             <div className="pill">Artificial Intelligence</div>
                             <div className="pill">Web Development</div>
                             <div className="pill">Mobile App Development</div>
+                        </div>
+                    </div>
+                    <div className="section1">
+                        <h2>Skills</h2>
+                        <div className="pill-container">
+                            <div className="pill">Problem Solving</div>
+                            <div className="pill">Teamwork</div>
+                            <div className="pill">Leadership</div>
                         </div>
                     </div>
                 </section>

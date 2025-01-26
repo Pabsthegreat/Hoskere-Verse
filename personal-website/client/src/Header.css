@@ -118,6 +118,7 @@ nav ul {
     flex: 1;
   }
   nav ul {
+    z-index: 1000;
     flex-direction: column; /* Vertical layout for links */
     gap: 1rem;
     position: absolute;

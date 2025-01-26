@@ -6,6 +6,20 @@
     margin: 0 auto;
     background-color: #121212;
 }
+.resume-page h2 {
+    font-size: 1.5rem;
+    font-weight: 250;
+    color: #ff9933;
+    text-align: center;
+}
+.resume-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+    position: relative;
+}
 
 .resume-heading {
     font-size: 2.5rem;
@@ -66,18 +80,10 @@
     font-size: 0.9rem;
     border: 1px solid #ff9933;
     box-shadow: 0 0 5px rgba(255, 153, 51, 0.6);
-    animation: sideToSide 2.5s ease-in-out infinite;
+    animation: zoom 5s ease-in-out infinite;
 }
 
-/* Floating Animation */
-@keyframes sideToSide {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-}
+
 
 /* Right Column */
 .resume-right {
@@ -154,6 +160,7 @@
     gap: 2.5rem;
     width: fit-content;
     border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-left: 4px solid #ff9933;
 }
@@ -180,7 +187,7 @@
     gap: 0.5rem;
 }
 
-.p_section .pill {
+.prog_section1 .pill {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 0.5rem 1rem;
@@ -188,18 +195,19 @@
     font-size: 0.9rem;
     border: 1px solid #ff9933;
     box-shadow: 0 0 5px rgba(255, 153, 51, 0.6);
-    animation: updown 2.5s ease-out infinite;
+    animation: zoom 5s ease-out infinite;
 }
 
 /* Floating Animation */
-@keyframes updown {
+@keyframes zoom {
     0%, 100% {
-        transform: translateY(0);
+        transform: scale(1);
     }
     50% {
-        transform: translateY(10px);
+        transform: scale(1.05);
     }
 }
+
 
 .c_section {
     background-color: rgba(255, 255, 255, 0.05);

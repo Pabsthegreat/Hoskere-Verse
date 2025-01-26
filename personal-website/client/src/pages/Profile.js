@@ -13,7 +13,7 @@ const Profile = () => {
 
       {/* Welcome Section */}
       <section className="welcome-section profile-section">
-        <h1>Welcome to the <span className="highlight">Hoskere-verse</span>!</h1>
+        <h1>The <span className="highlight">Hoskere-verse</span>!</h1>
         <p>
           I’m <span className="highlight">Adarsh Hoskere</span>, your friendly Indian tech guy, here to share my passion for coding, creativity, and technology.
         </p>

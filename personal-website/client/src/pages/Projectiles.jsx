@@ -4,7 +4,7 @@ import "./Projectiles.css";
 const ProjectTile = ({ project }) => {
   return (
     <article className="project-tile">
-      <img src={project.image} alt={project.title} className="project-image" />
+      <img src={project.image} alt={project.title} className="project-image"  />
       <h3>{project.title}</h3>
       <p>{project.description}</p>
       <div className="tags">
