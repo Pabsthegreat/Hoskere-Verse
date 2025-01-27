@@ -2,35 +2,35 @@
     "projects": [
       {
         "id": 1,
-        "title": "Personal Portfolio Website",
+        "title": "Hoskere-Verse",
         "image": "/images/download.jpeg",
         "description": "A fully responsive portfolio website showcasing my projects, blog posts, and certifications. Built using React and CSS.",
-        "tags": ["React", "CSS", "Responsive Design"],
-        "link": "https://myportfolio.com"
+        "tags": ["React", "CSS", "Responsive Design","Personal Project"],
+        "link": "https://github.com/Pabsthegreat/Hoskere-Verse"
       },
       {
         "id": 2,
         "title": "Typing Test App",
         "image": "/images/download.jpeg",
         "description": "A typing speed test app that calculates words per minute and accuracy. Developed using React and Node.js.",
-        "tags": ["React", "Node.js", "Express"],
-        "link": "https://github.com/username/typing-test"
+        "tags": ["React", "Node.js", "Express", "Class Project"],
+        "link": "https://github.com/Amfer7/TypingTest"
       },
       {
         "id": 3,
         "title": "Diabetes Management System",
         "image": "/images/download.jpeg",
         "description": "An AI-powered system that recommends personalized diet and exercise plans for diabetic patients in India. Built during an internship at RAPID Centre.",
-        "tags": ["Python", "Machine Learning", "Flask"],
-        "link": "https://github.com/username/diabetes-management"
+        "tags": ["Python", "Machine Learning","Data Analysis","Internship"],
+        "link": "https://github.com/Pabsthegreat/RAPID-Internship"
       },
       {
         "id": 4,
-        "title": "Arcade-Style Game",
+        "title": "Hunter Assasin",
         "image": "/images/download.jpeg",
         "description": "An engaging arcade-style game developed using Pygame and MySQL, featuring multiple levels and challenges.",
-        "tags": ["Python", "Pygame", "MySQL"],
-        "link": "https://github.com/username/arcade-game"
+        "tags": ["Python", "Pygame", "MySQL", "Class Project"],
+        "link": "https://github.com/Pabsthegreat/Project-class-12"
       }
       ,
       {
@@ -38,8 +38,48 @@
         "title": "IPL Auction UI",
         "image": "/images/download.jpeg",
         "description": "A full-stack e-commerce website with user authentication, product management, and payment integration. Built using MERN stack.",
-        "tags": ["React", "Node.js", "MongoDB"],
-        "link": "https://github.com/username/arcade-game"
+        "tags": ["Python", "Class Project"],
+        "link": "https://github.com/Pabsthegreat/IPLAuction"
+      },
+      {
+        "id": 6,
+        "title": "Data Structures and Applications",
+        "image": "/images/download.jpeg",
+        "description": "A full-stack e-commerce website with user authentication, product management, and payment integration. Built using MERN stack.",
+        "tags": ["Python","Lessons"],
+        "link": "https://github.com/Pabsthegreat/DataStructuresandApplications"
+      },
+      {
+        "id": 7,
+        "title": "Class 11 Programs",
+        "image": "/images/download.jpeg",
+        "description": "This has most of the programs that a basic Python student would need to learn. It has programs on basic data structures, file handling, and more.",
+        "tags": ["Python", "File Handling", "Lessons"],
+        "link": "https://github.com/Pabsthegreat/python-class-11"
+      },
+      {
+        "id": 8,
+        "title": "Class 12 Programs",
+        "image": "/images/download.jpeg",
+        "description": "This repository contains all the programs that I wrote in my class 12th Python project. It has programs on simple algorithms, MySQL, and Tkinter and more.",
+        "tags": ["Python", "Tkinter", "MySQL", "Lessons"],
+        "link": "https://github.com/Pabsthegreat/Python-class-12"
+      },
+      {
+        "id": 9,
+        "title": "Leetcode Problems",
+        "image": "/images/download.jpeg",
+        "description": "This repository contains all the Leetcode problems I've solved and my understanding of them. Why this exercise, you may ask? I found solving problems and then forgetting about them quite pointless; it felt like I was just chasing the number of questions solved. So, in an attempt to remember how each problem was solved and to help others, I have created this repository.",
+        "tags": ["DSA", "Problem Solving","Lessons"],
+        "link": "https://github.com/Pabsthegreat/Leetcode"
+      },
+      {
+        "id": 10,
+        "title": "Traffic Lights Controller",
+        "image": "/images/download.jpeg",
+        "description": "A basic application of verilog, this project is a traffic lights controller that uses a finite state machine to control the lights.",
+        "tags": ["I-Verilog","Class Project"],
+        "link": "https://github.com/Pabsthegreat/TrafficLights-Verilog"
       }
     ]
   }
