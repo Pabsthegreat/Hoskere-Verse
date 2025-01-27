@@ -56,7 +56,7 @@ const Profile = () => {
           I would love to hear from you, whether it be about tech, books, fitness, or anything else. Feel free to email me at adarsh11018@gmail.com or connect on:
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/adarsh-hoskere/" target="_blank" rel="noreferrer">LinkedIn</a>, <a href="https://github.com/Pabsthegreat" target="_blank" rel="noreferrer">GitHub</a>, or <a href="https://leetcode.com/kingdash" target="_blank" rel="noreferrer">Leetcode</a>.
+          <a href="https://www.linkedin.com/in/adarsh-hoskere-56b92a279/" target="_blank" rel="noreferrer">LinkedIn</a>, <a href="https://github.com/Pabsthegreat" target="_blank" rel="noreferrer">GitHub</a>, or <a href="https://leetcode.com/kingdash" target="_blank" rel="noreferrer">Leetcode</a>.
         </p>
       </section>
     </div>

@@ -69,7 +69,7 @@ const Projects = () => {
       <div className="filter-section">
         <Carousel
           title="Languages & Frameworks"
-          filters={["React", "Node.js", "Python", "CSS", "MongoDB"]}
+          filters={["React", "Node.js", "Python", "CSS", "MongoDB", "Express"]}
           selectedFilters={filters.tags}
           onToggleFilter={toggleFilter}
         />
@@ -81,7 +81,7 @@ const Projects = () => {
         />
         <Carousel 
             title="Purpose"
-            filters={["Class Project", "Personal Project", "Hackathon", "Startup", "Freelance"]}
+            filters={["Class Project", "Personal Project", "Hackathon"]}
             selectedFilters={filters.tags}
             onToggleFilter={toggleFilter}
         />

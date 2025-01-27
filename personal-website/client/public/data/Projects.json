@@ -4,9 +4,9 @@
         "id": 1,
         "title": "Personal Portfolio Website",
         "image": "/images/download.jpeg",
-        "description": "A fully responsive portfolio website showcasing my projects, blog posts, and certifications. Built using React and CSS.",
-        "tags": ["React", "CSS", "Responsive Design"],
-        "link": "https://myportfolio.com"
+        "description": "This is one of my passion projects, built using React and CSS. I really wanted to build a website and needed one for myself at the same time so this was it.",
+        "tags": ["React", "CSS", "Web Development"],
+        "link": "https://github.com/Pabsthegreat/YOU"
       },
       {
         "id": 2,
@@ -14,32 +14,72 @@
         "image": "/images/download.jpeg",
         "description": "A typing speed test app that calculates words per minute and accuracy. Developed using React and Node.js.",
         "tags": ["React", "Node.js", "Express"],
-        "link": "https://github.com/username/typing-test"
+        "link": "https://github.com/Amfer7/TypingTest"
       },
       {
         "id": 3,
-        "title": "Diabetes Management System",
+        "title": "Smart Living",
         "image": "/images/download.jpeg",
-        "description": "An AI-powered system that recommends personalized diet and exercise plans for diabetic patients in India. Built during an internship at RAPID Centre.",
-        "tags": ["Python", "Machine Learning", "Flask"],
-        "link": "https://github.com/username/diabetes-management"
+        "description": "An AI-powered system that recommends personalized diet and exercise plans for diabetic patients in India. Built during an internship at RAPID Centre in PES University.",
+        "tags": ["Python", "Machine Learning", "Data Processing"],
+        "link": "https://github.com/Pabsthegreat/RAPID-Internship"
       },
       {
         "id": 4,
-        "title": "Arcade-Style Game",
+        "title": "Hunter Assassin",
         "image": "/images/download.jpeg",
-        "description": "An engaging arcade-style game developed using Pygame and MySQL, featuring multiple levels and challenges.",
+        "description": "An engaging arcade-style game called Hunter-Assasin developed using Pygame and MySQL, featuring progressive difficulty",
         "tags": ["Python", "Pygame", "MySQL"],
-        "link": "https://github.com/username/arcade-game"
+        "link": "https://github.com/Pabsthegreat/Project-class-12"
       }
       ,
       {
         "id": 5,
         "title": "IPL Auction UI",
         "image": "/images/download.jpeg",
-        "description": "A full-stack e-commerce website with user authentication, product management, and payment integration. Built using MERN stack.",
-        "tags": ["React", "Node.js", "MongoDB"],
-        "link": "https://github.com/username/arcade-game"
+        "description": "A user-friendly desktop application for conducting IPL auctions, built using Python and Tkinter.",
+        "tags": ["Python", "Tkinter"],
+        "link": "https://github.com/Pabsthegreat/IPLAuction"
+      },
+      {
+        "id": 6,
+        "title": "Covid-19 Tracker",
+        "image": "/images/download.jpeg",
+        "description": "A Covid-19 tracker that displays the number of cases, recoveries, and deaths in real-time. Developed using React and Material-UI.",
+        "tags": ["React", "Material-UI", "API"],
+        "link": ""
+      },
+      {
+        "id": 7,
+        "title": "Weather App",
+        "image": "/images/download.jpeg",
+        "description": "A weather app that displays the current weather and forecast for the next 5 days. Developed using React and OpenWeatherMap API.",
+        "tags": ["React", "API", "CSS"],
+        "link": ""
+      },
+      {
+        "id": 8,
+        "title": "Expense Tracker",
+        "image": "/images/download.jpeg",
+        "description": "An expense tracker that helps you keep track of your spending. Developed using React and Firebase.",
+        "tags": ["React", "Firebase", "CSS"],
+        "link": ""
+      },
+      {
+        "id": 9,
+        "title": "To-Do List App",
+        "image": "/images/download.jpeg",
+        "description": "A simple to-do list app that helps you keep track of your tasks. Developed using React and Local Storage.",
+        "tags": ["React", "Local Storage", "CSS"],
+        "link": ""
+      },
+      {
+        "id": 10,
+        "title": "Quiz App",
+        "image": "/images/download.jpeg",
+        "description": "A quiz app that tests your knowledge on various topics. Developed using React and Open Trivia DB API.",
+        "tags": ["React", "API", "CSS"],
+        "link": ""
       }
     ]
   }
