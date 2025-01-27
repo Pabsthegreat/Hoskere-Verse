@@ -22,11 +22,18 @@
     font-style: italic;
 }
 
+.section2 .seemore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
 .section2 .seemore p {
     font-size: 1.5rem;
     color: #0ABAB5;
     width: fit-content;
     justify-self: center;
+    align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
