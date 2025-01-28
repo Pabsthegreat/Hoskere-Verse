@@ -5,15 +5,15 @@
         "title": "Personal Portfolio Website",
         "image": "/images/download.jpeg",
         "description": "This is one of my passion projects, built using React and CSS. I really wanted to build a website and needed one for myself at the same time so this was it.",
-        "tags": ["React", "CSS", "Web Development"],
-        "link": "https://github.com/Pabsthegreat/YOU"
+        "tags": ["React", "CSS", "Web Development","Personal Project"],
+        "link": "https://github.com/Pabsthegreat/Hoskere-Verse"
       },
       {
         "id": 2,
         "title": "Typing Test App",
         "image": "/images/download.jpeg",
         "description": "A typing speed test app that calculates words per minute and accuracy. Developed using React and Node.js.",
-        "tags": ["React", "Node.js", "Express"],
+        "tags": ["React", "Node.js", "Express", "Class Project"],
         "link": "https://github.com/Amfer7/TypingTest"
       },
       {
@@ -21,7 +21,7 @@
         "title": "Smart Living",
         "image": "/images/download.jpeg",
         "description": "An AI-powered system that recommends personalized diet and exercise plans for diabetic patients in India. Built during an internship at RAPID Centre in PES University.",
-        "tags": ["Python", "Machine Learning", "Data Processing"],
+        "tags": ["Python", "Machine Learning", "Data Processing","Internship"],
         "link": "https://github.com/Pabsthegreat/RAPID-Internship"
       },
       {
@@ -29,7 +29,7 @@
         "title": "Hunter Assassin",
         "image": "/images/download.jpeg",
         "description": "An engaging arcade-style game called Hunter-Assasin developed using Pygame and MySQL, featuring progressive difficulty",
-        "tags": ["Python", "Pygame", "MySQL"],
+        "tags": ["Python", "Pygame", "MySQL","Class Project"],
         "link": "https://github.com/Pabsthegreat/Project-class-12"
       }
       ,
@@ -38,48 +38,48 @@
         "title": "IPL Auction UI",
         "image": "/images/download.jpeg",
         "description": "A user-friendly desktop application for conducting IPL auctions, built using Python and Tkinter.",
-        "tags": ["Python", "Tkinter"],
+        "tags": ["Python", "Tkinter","Class Project"],
         "link": "https://github.com/Pabsthegreat/IPLAuction"
       },
       {
         "id": 6,
-        "title": "Covid-19 Tracker",
+        "title": "Python Class 11",
         "image": "/images/download.jpeg",
-        "description": "A Covid-19 tracker that displays the number of cases, recoveries, and deaths in real-time. Developed using React and Material-UI.",
-        "tags": ["React", "Material-UI", "API"],
-        "link": ""
+        "description": "A collection of Python programs developed for class 11 students to help them understand the basics of Python programming.",
+        "tags": ["Python","Lessons"],
+        "link": "https://github.com/Pabsthegreat/python-class-11"
       },
       {
         "id": 7,
-        "title": "Weather App",
+        "title": "Python Class 12",
         "image": "/images/download.jpeg",
-        "description": "A weather app that displays the current weather and forecast for the next 5 days. Developed using React and OpenWeatherMap API.",
-        "tags": ["React", "API", "CSS"],
-        "link": ""
+        "description": "A collection of Python programs developed for class 12 students with a little more advanced concepts like Tkinter, MySQL, etc.",
+        "tags": ["Python", "Tkinter","MySQL","Lessons"],
+        "link": "https://github.com/Pabsthegreat/Python-class-12"
       },
       {
         "id": 8,
-        "title": "Expense Tracker",
+        "title": "Traffic Lights Controller",
         "image": "/images/download.jpeg",
-        "description": "An expense tracker that helps you keep track of your spending. Developed using React and Firebase.",
-        "tags": ["React", "Firebase", "CSS"],
-        "link": ""
+        "description": "A traffic lights controller simulation developed using Verilog",
+        "tags": ["Verilog", "FPGA","Class Project"],
+        "link": "https://github.com/Pabsthegreat/TrafficLights-Verilog"
       },
       {
         "id": 9,
-        "title": "To-Do List App",
+        "title": "Data Structures and Applications",
         "image": "/images/download.jpeg",
-        "description": "A simple to-do list app that helps you keep track of your tasks. Developed using React and Local Storage.",
-        "tags": ["React", "Local Storage", "CSS"],
-        "link": ""
+        "description": "Contains programs on various data structures like linked lists, stacks, queues, trees, and graphs for junior year college Students.",
+        "tags": ["C", "Data Structures","Lessons"],
+        "link": "https://github.com/Pabsthegreat/DataStructuresandApplications"
       },
       {
         "id": 10,
-        "title": "Quiz App",
+        "title": "Leetcode Solutions",
         "image": "/images/download.jpeg",
-        "description": "A quiz app that tests your knowledge on various topics. Developed using React and Open Trivia DB API.",
-        "tags": ["React", "API", "CSS"],
-        "link": ""
+        "description": "My understanding and interpretation of various leetcode problems and their solutions.",
+        "tags": ["C","Python","DSA","Lessons"],
+        "link": "https://github.com/Pabsthegreat/Leetcode"
       }
     ]
   }

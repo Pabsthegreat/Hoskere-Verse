@@ -1,28 +1,20 @@
 {
     "certificates": [
         {
-        "id": 1,
-        "title": "AWS Certified Cloud Practitioner",
-        "link": "https://example.com/certification/aws",
-        "description": "This certification validates the ability to define basic cloud infrastructure and architectural principles.",
-        "tags": ["AWS", "Cloud Computing"],
-        "image": "/images/download.jpeg"
-        },
-        {
         "id": 2,
         "title": "Google Data Analytics Professional Certificate",
-        "link": "https://example.com/certification/meta",
-        "description": "This certificate demonstrates proficiency in analyzing and interpreting data to make informed business decisions.",
-        "tags": ["Data Analytics", "Google"],
-        "image": "/images/download.jpeg"
+        "link": "https://www.coursera.org/account/accomplishments/professional-cert/GHRDFTDZBR7F",
+        "description": "Data Analytics is something I am intrigued by and this certification validates the ability to analyze, interpret and visualize data.",
+        "tags": ["Data Analytics", "Google","R","Tableau"],
+        "image": "/images/GoogleData.jpg"
         },
         {
         "id": 3,
-        "title": "Meta Front-End Developer",
+        "title": "Web Developmet - PESU I/O",
         "link": "https://example.com/certification/meta",
-        "description": "This certification validates the ability to design and develop responsive websites using HTML, CSS, and JavaScript.",
-        "tags": ["HTML", "CSS", "JavaScript"],
-        "image": "/images/download.jpeg"
+        "description": "I love the idea of being able to create visually appealing and useful websites. This certification validates the ability to design and develop responsive websites using HTML, CSS, and JavaScript.",
+        "tags": ["HTML", "CSS", "JavaScript","React"],
+        "image": "/images/PESUIO.jpg"
         }
     ]
 }
