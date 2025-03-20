@@ -141,12 +141,12 @@ const Resume = () => {
                             <p className="contact-item">
                                 <a href="mailto:adarsh11018@gmail.com">adarsh11018@gmail.com</a></p>
                             <p className="contact-item">
-                                <a href="https://www.linkedin.com/in/adarsh-hoskere/">LinkedIn</a></p>
+                                <a href="https://www.linkedin.com/in/adarsh-hoskere/" target="_blank">LinkedIn</a></p>
                             <p className="contact-item">
-                                <a href="https://github.com/adarshhoskere">GitHub</a>
+                                <a href="https://github.com/adarshhoskere" target="_blank">GitHub</a>
                             </p>
                             <p className="contact-item">
-                                <a href="https://leetcode.com/kingdash">LeetCode</a>
+                                <a href="https://leetcode.com/kingdash" target="_blank">LeetCode</a>
                             </p>
                         </div>
                     </div>
