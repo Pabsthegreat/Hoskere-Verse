@@ -7,6 +7,10 @@
   text-align: center;
   font-family: 'Segoe UI Light', sans-serif;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content to top and button to bottom */
+  height: 100%;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -23,6 +27,11 @@
   margin-bottom: 0.5rem;
 }
 
+.project-tile h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .tags {
   margin: 1rem 0;
   display: flex;
@@ -31,49 +40,57 @@
   gap: 0.5rem;
 }
 
-.tag {
-  font-size: 0.9rem;
-  font-weight: bold;
-  background: none;
+.tag {   
+  font-size: 0.9rem;   
+  font-weight: bold;   
+  background: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500);
+  -webkit-background-clip: text;   
+  background-clip: text;   
   color: transparent;
-  background-image: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500);
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: colorShift 3s linear infinite;
-}
+  background-size: 200% 200%;
+  margin-top: auto;
+  animation: colorShift 5s linear infinite;
+}  
 
-/* Gradient animation for tags */
-@keyframes colorShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes colorShift {   
+  0% { background-position: 0% 50%; }   
+  50% { background-position: 100% 50%; }   
+  100% { background-position: 0% 50%; } 
+} 
+
+/** Ensure the button stays at the bottom **/
+.project-tile a {
+  margin-top: auto; /* Pushes the button to the bottom */
+  display: flex;
+  justify-content: center;
 }
 
 .see-more-btn {
   padding: 0.5rem 1.5rem;
-  background: transparent; /* Always black fill */
+  background: transparent;
   color: white;
   border: 2px solid;
   border-image: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500) 1;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
   transition: transform 0.3s, border-color 0.3s;
   animation: borderShift 3s linear infinite;
 }
 
 .see-more-btn:hover {
-  transform: scale(1.1); /* Enlarges on hover */
-  background: transparent; /* No fill */
+  transform: scale(1.1);
+  background: transparent;
 }
 
 @keyframes borderShift {
   0% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
-  50% { border-image-source: linear-gradient(135deg, #ff1493, #00ffff, #ff7f50, #ff4500); }
+  25% { border-image-source: linear-gradient(90deg, #ff1493, #00ffff, #ff4500, #ff7f50); }
+  50% { border-image-source: linear-gradient(135deg, #00ffff, #ff7f50, #ff4500, #ff1493); }
+  75% { border-image-source: linear-gradient(180deg, #ff4500, #ff1493, #ff7f50, #00ffff); }
   100% { border-image-source: linear-gradient(45deg, #ff7f50, #ff1493, #00ffff, #ff4500); }
 }
 
-/* Responsive design for project tiles */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .project-tile {
     padding: 0.75rem;
@@ -121,19 +138,5 @@
   .see-more-btn {
     padding: 0.3rem 0.75rem;
     font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .project-tile {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-tile {
-    width: 100%;
-    margin-bottom: 1rem;
   }
 }

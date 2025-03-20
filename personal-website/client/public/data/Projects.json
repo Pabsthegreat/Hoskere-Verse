@@ -1,6 +1,14 @@
 {
     "projects": [
       {
+        "id": 0,
+        "title": "ProctorX",
+        "image": "/images/download.jpeg",
+        "description": "ProctorX is a complete end-end secure test-taking platform with all anti-cheat measures including behavioral analysis like mouse and keyboard actions used to assign risk scores to users.",
+        "tags": ["React", "Express", "Web Development","Hackathon", "Firebase", "Machine Learning"],
+        "link": "https://github.com/Pabsthegreat/PoctorX"
+      },
+      {
         "id": 1,
         "title": "Personal Portfolio Website",
         "image": "/images/download.jpeg",

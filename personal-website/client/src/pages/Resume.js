@@ -131,8 +131,7 @@ const Resume = () => {
                             <h2>Certifications</h2>
                             <div className="pill-container">
                                 <div className="pill">AWS Certified Solutions Architect</div>
-                                <div className="pill">Google IT Automation with Python</div>
-                                <div className="pill">IBM Data Science Professional</div>
+                                <div className="pill">Introduction to Web Development</div>
                             </div>
                         </div>
                     </div>
